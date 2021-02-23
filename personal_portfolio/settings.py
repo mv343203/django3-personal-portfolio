@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'm8#_np1u2(2%jyi*k)lz=@)i1(@7@jp2+g$=n$_&p@1r$2krfj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mv343203.pythonanywhere.com']
 
 
 # Application definition
@@ -121,8 +121,8 @@ USE_TZ = True
 
 
 STATIC_URL = '/static/'
-
-STATIC_FILES = [ ]
+STATIC_ROOT = BASE_DIR / 'static'
+#STATIC_FILES = [ ]
 
 MEDIA_URL= '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
